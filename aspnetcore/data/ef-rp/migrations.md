@@ -35,17 +35,17 @@ Use **SQL Server Object Explorer** (SSOX) to delete the database, or run the fol
 Drop-Database
 ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-* Run the following command at a command prompt to install the EF CLI tools:
+* Run the following command in the command prompt or terminal to install the EF CLI tools:
 
   ```console
   dotnet tool install --global dotnet-ef --version 3.0.0-*
   ```
 
-* In the command prompt, navigate to the project folder. The project folder contains the *ContosoUniversity.csproj* file.
+* In the command prompt or terminal, navigate to the project folder. The project folder contains the *ContosoUniversity.csproj* file.
 
-* Delete the *CU.db* file, or run the following command:
+* Delete the *CU.db* file or run the following command:
 
   ```console
   dotnet ef database drop --force
@@ -64,9 +64,9 @@ Add-Migration InitialCreate
 Update-Database
 ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-Make sure the command prompt is in the project folder, and run the following commands:
+Make sure the command prompt or terminal is in the project folder and run the following commands:
 
 ```console
 dotnet ef migrations add InitialCreate
@@ -181,11 +181,11 @@ Drop-Database
 
 Run `Get-Help about_EntityFrameworkCore` from the PMC to get help information.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-Open a command window and navigate to the project folder. The project folder contains the *Startup.cs* file.
+Open a command window or terminal window and navigate to the project folder. The project folder contains the *Startup.cs* file.
 
-Enter the following in the command window:
+Enter the following in the command or terminal window:
 
  ```console
  dotnet ef database drop
@@ -203,8 +203,7 @@ Build the project and create the first migration.
 Add-Migration InitialCreate
 Update-Database
 ```
-
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 ```console
 dotnet ef migrations add InitialCreate
@@ -242,7 +241,7 @@ To delete a migration, use the following command:
 
 Remove-Migration
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 ```console
 dotnet ef migrations remove
