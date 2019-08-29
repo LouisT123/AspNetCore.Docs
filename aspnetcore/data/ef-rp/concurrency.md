@@ -117,7 +117,7 @@ The following highlighted code shows the T-SQL that verifies exactly one row was
 
 [@@ROWCOUNT](/sql/t-sql/functions/rowcount-transact-sql) returns the number of rows affected by the last statement. If no rows are updated, EF Core throws a `DbUpdateConcurrencyException`.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 For a SQLite database, the `[Timestamp]` attribute on an entity property defined as byte array:
 
@@ -146,7 +146,7 @@ Build the project.
   Add-Migration RowVersion
   ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 * Run the following command in a terminal:
 
@@ -171,7 +171,7 @@ This command:
   Update-Database
   ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 * Open the `Migrations/<timestamp>_RowVersion.cs` file and add the highlighted code:
 
@@ -202,7 +202,7 @@ This command:
 * Use `Department` for the model class.
   * Use the existing context class instead of creating a new one.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 * Create a *Pages/Departments* folder.
 
@@ -510,7 +510,7 @@ The preceding commands:
 
 Follow the instructions in [Scaffold the student model](xref:data/ef-rp/intro#scaffold-student-pages) and use `Department` for the model class.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
  Run the following command:
 
