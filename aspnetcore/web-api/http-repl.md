@@ -5,7 +5,7 @@ description: Learn how to use the HTTP REPL .NET Core Global Tool to browse and 
 monikerRange: '>= aspnetcore-2.1'
 ms.author: scaddie
 ms.custom: mvc
-ms.date: 07/25/2019
+ms.date: 08/29/2019
 uid: web-api/http-repl
 ---
 # Test web APIs with the HTTP REPL
@@ -319,52 +319,6 @@ Subsequent responses honor the setting of four spaces:
 ]
 ```
 
-### Set indentation size
-
-Response indentation size customization is currently supported for JSON only. The default size is two spaces. For example:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Apple"
-  },
-  {
-    "id": 2,
-    "name": "Orange"
-  },
-  {
-    "id": 3,
-    "name": "Strawberry"
-  }
-]
-```
-
-To change the default size, set the `formatting.json.indentSize` key. For example, to always use four spaces:
-
-```console
-pref set formatting.json.indentSize 4
-```
-
-Subsequent responses honor the setting of four spaces:
-
-```json
-[
-    {
-        "id": 1,
-        "name": "Apple"
-    },
-    {
-        "id": 2,
-        "name": "Orange"
-    },
-    {
-        "id": 3,
-        "name": "Strawberry"
-    }
-]
-```
-
 ### Set the default text editor
 
 By default, the HTTP REPL has no text editor configured for use. To test web API methods requiring an HTTP request body, a default text editor must be set. The HTTP REPL tool launches the configured text editor for the sole purpose of composing the request body. Run the following command to set your preferred text editor as the default:
@@ -413,7 +367,7 @@ By default, the HTTP REPL has a set of relative paths that it uses to find the S
 To use a different set of search paths in your environment, set the `swagger.searchPaths` preference. The value must be a pipe-delimited list of relative paths. For example:
 
 ```console
-pref set swagger.searchPaths "swagger/v2/swagger.json|swagger/v3/swagger.json
+pref set swagger.searchPaths "swagger/v2/swagger.json|swagger/v3/swagger.json"
 ```
 
 ## Test HTTP GET requests
