@@ -72,7 +72,7 @@ To display the name of the assigned department for a course:
   * Use `Course` for the model class.
   * Use the existing context class instead of creating a new one.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 * Create a *Pages/Courses* folder.
 
@@ -169,7 +169,7 @@ Create *SchoolViewModels/InstructorIndexData.cs* with the following code:
   * Use `Instructor` for the model class.
   * Use the existing context class instead of creating a new one.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 * Create a *Pages/Instructors* folder.
 
@@ -381,7 +381,7 @@ To display the name of the assigned department in a list of courses:
 
 Follow the instructions in [Scaffold the student model](xref:data/ef-rp/intro#scaffold-the-student-model) and use `Course` for the model class.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
  Run the following command:
 
@@ -468,7 +468,7 @@ In the *SchoolViewModels* folder, create *InstructorIndexData.cs* with the follo
 
 Follow the instructions in [Scaffold the student model](xref:data/ef-rp/intro#scaffold-the-student-model) and use `Instructor` for the model class.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
  Run the following command:
 
