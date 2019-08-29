@@ -102,7 +102,7 @@ In **SQL Server Object Explorer** (SSOX), open the Student table designer by dou
 
 The preceding image shows the schema for the `Student` table. The name fields have type `nvarchar(MAX)`. When a migration is created and applied later in this tutorial, the name fields become `nvarchar(50)` as a result of the string length attributes.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 In your SQLite tool, examine the column definitions for the `Student` table. The name fields have type `Text`. Notice that the first name field is called `FirstMidName`. In the next section, you change the name of that column to `FirstName`.
 
@@ -182,7 +182,7 @@ SqlException: Invalid column name 'FirstName'.
 
   Before the migration was applied, the name columns were of type [nvarchar(MAX)](/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql). The name columns are now `nvarchar(50)`. The column name has changed from `FirstMidName` to `FirstName`.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 The error message is similar to the following example:
 
@@ -190,7 +190,7 @@ The error message is similar to the following example:
 SqliteException: SQLite Error 1: 'no such column: s.FirstName'.
 ```
 
-* Open a command window in the project folder. Enter the following commands to create a new migration and update the database:
+* Open a command or terminal window in the project folder. Enter the following commands to create a new migration and update the database:
 
   ```console
   dotnet ef migrations add ColumnFirstName
@@ -556,7 +556,7 @@ database "ContosoUniversity", table "dbo.Department", column 'DepartmentID'.
 
 In the next section, you see what to do about this error.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 If you add a migration and run the `database update` command, the following error would be produced:
 
@@ -601,9 +601,9 @@ To force EF Core to create a new database, drop and update the database:
   Update-Database
   ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-* Open a command window and navigate to the project folder. The project folder contains the *ContosoUniversity.csproj* file.
+* Open a command or terminal window and navigate to the project folder. The project folder contains the *ContosoUniversity.csproj* file.
 
 * Run the following command:
 
@@ -638,7 +638,7 @@ Open the database in SSOX:
 
   ![CourseAssignment data in SSOX](complex-data-model/_static/ssox-ci-data.png)
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 Use your SQLite tool to examine the database:
 
@@ -697,9 +697,9 @@ The way of handling the situation shown here is simplified for this tutorial. A 
 
 Because the `DbInitializer.Initialize` method is designed to work only with an empty database, use SSOX to delete all the rows in the Student and Course tables. (Cascade delete will take care of the Enrollment table.)
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-* If you're using SQL Server LocalDB with Visual Studio Code, run the following command:
+* If you're using SQL Server LocalDB with Visual Studio Code or SQLite with Visual Studio for Mac, run the following command:
 
   ```console
   dotnet ef database update
@@ -834,7 +834,7 @@ Add-Migration ColumnFirstName
 Update-Database
 ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 ```console
 dotnet ef migrations add ColumnFirstName
@@ -1248,7 +1248,7 @@ Build the project.
 Add-Migration ComplexDataModel
 ```
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
 ```console
 dotnet ef migrations add ComplexDataModel
@@ -1295,9 +1295,9 @@ Update-Database
 
 Run `Get-Help about_EntityFrameworkCore` from the PMC to get help information.
 
-# [Visual Studio Code](#tab/visual-studio-code)
+# [Visual Studio Code / Visual Studio for Mac](#tab/visual-studio-code+visual-studio-mac)
 
-Open a command window and navigate to the project folder. The project folder contains the *Startup.cs* file.
+Open a command or terminal window and navigate to the project folder. The project folder contains the *Startup.cs* file.
 
 Enter the following in the command window:
 
